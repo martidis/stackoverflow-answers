@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>stackoverflow-answers</artifactId>
+		<groupId>com.tasosmartidis.stackoverflow</groupId>
+		<version>1.0</version>
+	</parent>
+
+	<artifactId>generated</artifactId>
+	<packaging>jar</packaging>
+	<name>StackOverflow Answers - generated sources</name>
+
+	<properties>
+		<maven-jaxb2-plugin.version>0.11.0</maven-jaxb2-plugin.version>
+		<jaxb2-basics.version>0.9.0</jaxb2-basics.version>
+		<jaxb2-basics-annotate.version>0.6.4</jaxb2-basics-annotate.version>
+		<jaxb2-namespace-prefix.version>1.1</jaxb2-namespace-prefix.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb2-plugin</artifactId>
+				<version>${maven-jaxb2-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>generate</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<extension>true</extension>
+							<verbose>true</verbose>
+							<schemaDirectory>src/main/resources/xsd</schemaDirectory>
+							<bindingDirectory>src/main/resources/xjb</bindingDirectory>
+							<args>
+								<arg>-Xannotate</arg>
+								<!--<arg>-Xinheritance</arg>-->
+							</args>
+							<plugins>
+								<plugin>
+									<groupId>org.jvnet.jaxb2_commons</groupId>
+									<artifactId>jaxb2-basics</artifactId>
+									<version>${jaxb2-basics.version}</version>
+								</plugin>
+								<plugin>
+									<groupId>org.jvnet.jaxb2_commons</groupId>
+									<artifactId>jaxb2-basics-annotate</artifactId>
+									<version>${jaxb2-basics-annotate.version}</version>
+								</plugin>
+								<plugin>
+									<groupId>org.jvnet.jaxb2_commons</groupId>
+									<artifactId>jaxb2-namespace-prefix</artifactId>
+									<version>${jaxb2-namespace-prefix.version}</version>
+								</plugin>
+							</plugins>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

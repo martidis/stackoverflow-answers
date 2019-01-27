@@ -1,0 +1,41 @@
+<claimImportCompositeDTO>
+	<claimId>900</claimId>
+	<claimNumber>AT0000000000018</claimNumber>
+	<claimDTO>
+		<recordId>900</recordId>
+		<version>1</version>
+		<clmAddress>
+			<recordId>900</recordId>
+			<version>0</version>
+		</clmAddress>
+		<claimStatus>
+			<expired class="list">
+				<claimStatusDTO>
+					<recordId>900</recordId>
+					<version>1</version>
+				</claimStatusDTO>
+				<claimStatusDTO>
+					<recordId>910</recordId>
+					<version>2</version>
+				</claimStatusDTO>
+			</expired>
+			<statusCompleteWorkItemFlag>false</statusCompleteWorkItemFlag>
+		</claimStatus>
+	</claimDTO>
+	<notes class="list">
+		<notepadDTO>
+			<recordId>3503</recordId>
+			<version>0</version>
+			<notepadText class="list">
+				<notepadTextDTO>
+					<recordId>3503</recordId>
+					<version>0</version>
+				</notepadTextDTO>
+				<notepadTextDTO>
+					<recordId>3504</recordId>
+					<version>0</version>
+				</notepadTextDTO>
+			</notepadText>
+		</notepadDTO>
+	</notes>
+</claimImportCompositeDTO>
