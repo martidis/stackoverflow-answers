@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:v4="financetypes:defn:v4" xmlns:v5="financetypes:defn:v5">
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="v4PSType" type="PSTypev4" />
+				<xs:element name="v5PSType" type="PSTypev5" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="PSTypev4">
+		<xs:simpleContent>
+			<xs:extension base="xs:string" />
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="PSTypev5">
+			<xs:simpleContent>
+				<xs:extension base="xs:string" />
+			</xs:simpleContent>
+	</xs:complexType>
+
+</xs:schema>

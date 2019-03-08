@@ -1,0 +1,4 @@
+<root xmlns:v4="financetypes:defn:v4" xmlns:v5="financetypes:defn:v5">
+	<v4:PS>version 4</v4:PS>
+	<v5:PS>version 5</v5:PS>
+</root>
