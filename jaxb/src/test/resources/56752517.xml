@@ -1,0 +1,59 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:api="http://www.example.com/publications/api">
+	<api:schema-version>5.5</api:schema-version>
+	<category scheme="http://www.example.com/publications/atom/feeds/" term="item" label="Item" />
+	<id>tag:elements@Test,5.15:/secure-api/v5.5/feeds/users/676</id>
+	<updated>2019-06-17T09:04:39.87+01:00</updated>
+	<generator uri="https://test.com/" version="5.15">Example Elements</generator>
+	<icon>https://test.com:8091/secure-api/v5.5/Example.ico</icon>
+	<rights>This data is the property of the Organisation, and can only be used with permission.</rights>
+	<subtitle>This feed represents a single user.</subtitle>
+	<link type="application/atom+xml" rel="self" href="https://test.com:8091/secure-api/v5.5/users/676" />
+	<title>John deo</title>
+	<author>
+		<name>Example Elements at Test PROD</name>
+	</author>
+	<entry>
+		<id>tag:elements@Test,5.15:/secure-api/v5.5/users/676</id>
+		<category scheme="http://www.example.com/publications/atom/entries/" term="item" label="Item" />
+		<updated>2019-06-17T09:04:39.87+01:00</updated>
+		<link type="application/atom+xml" rel="alternate" href="https://test.com:8091/secure-api/v5.5/users/676" />
+		<title>John deo</title>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>User</p>
+				<a href="https://test.com:8091/secure-api/v5.5/users/676/photo?type=profile">Photo</a>
+				<p>
+					<a href="https://test.com:8091/secure-api/v5.5/users/676/relationships">Relationships</a>
+					with other data
+				</p>
+			</div>
+		</content>
+		<api:object category="user" id="676" proprietary-id="abcd1247" username="abcd1247" last-affected-when="2019-06-17T09:04:39.87+01:00" last-modified-when="2018-11-29T10:28:43.403+00:00" href="https://test.com:8091/secure-api/v5.5/users/676" created-when="2010-05-04T09:49:46.507+01:00" type-id="1" type="person">
+			<!-- User type 1 is "person" -->
+			<api:ever-approved>true</api:ever-approved>
+			<api:is-public>false</api:is-public>
+			<api:is-login-allowed>true</api:is-login-allowed>
+			<api:title>Prof</api:title>
+			<api:initials>Jo</api:initials>
+			<api:last-name>John</api:last-name>
+			<api:first-name>Deo</api:first-name>
+			<api:email-address>John.deo@example.com</api:email-address>
+			<api:known-as>Liz</api:known-as>
+			<api:primary-group-descriptor>ABCS</api:primary-group-descriptor>
+			<api:arrive-date>2009-10-05</api:arrive-date>
+			<api:user-search-settings>
+				<api:default>
+				</api:default>
+			</api:user-search-settings>
+			<api:records>
+				<api:record format="native" id="3245433412" source-id="1" source-name="manual" source-display-name="Manual">
+					<api:native />
+				</api:record>
+			</api:records>
+			<api:fields />
+			<api:relationships href="https://test.com:8091/secure-api/v5.5/users/676/relationships" />
+			<api:user-identifier-associations user-id="676" proprietary-id="abcd1247" username="abcd1247">
+			</api:user-identifier-associations>
+		</api:object>
+	</entry>
+</feed>
